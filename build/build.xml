@@ -13,8 +13,7 @@
 
     <target name="analyze" depends="init,
                                     clean,
-                                    jshint,
-                                    csslint" />
+                                    jshint" />
 
     <target name="jshint"
             description="Check js file against jshint"
