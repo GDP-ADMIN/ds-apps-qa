@@ -206,6 +206,10 @@
             <include name="**/*.js" />
             <exclude name="**/*.min.js" />
         </patternset>
+        
+        <patternset id="ds-specific">
+            <exclude name="common/widget/built/*.*" />
+        </patternset>
 
         <!-- CSS files -->
         <patternset id="css">
@@ -245,6 +249,7 @@
             <patternset refid="node-modules" />
             <patternset refid="build-dir" />
             <patternset refid="bootstrap-js" />
+            <patternset refid="ds-specific" />
         </fileset>
 
         <fileset id="src.css" dir="${project.appsdir}">
